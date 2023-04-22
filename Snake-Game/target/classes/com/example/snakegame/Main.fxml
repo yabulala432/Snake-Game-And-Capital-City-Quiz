@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.85" prefHeight="584.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.snakegame.Controller">
+    <children>
+        <Label fx:id="countryLabelId" alignment="CENTER" layoutX="-3.0" layoutY="122.0" prefHeight="114.0" prefWidth="755.0" text=" Enter Next-&gt;">
+            <font>
+                <Font size="77.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.026399999856948853" green="0.8799999952316284" blue="0.6334863305091858" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.3980344533920288" blue="0.9700000286102295" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label fx:id="questionerLabelId" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="44.0" prefHeight="59.0" prefWidth="600.0" text="Welcome to another Game!!!">
+            <font>
+                <Font size="41.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.8899999856948853" green="0.1941504329442978" blue="0.02669999934732914" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.0962962955236435" green="0.6837037205696106" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Button fx:id="oneButtonId" layoutX="24.0" layoutY="294.0" mnemonicParsing="false" onAction="#oneAction" prefHeight="86.0" prefWidth="232.0" text="1" textFill="WHITE">
+            <font>
+                <Font name="Ebrima" size="22.0" />
+            </font></Button>
+        <Button fx:id="twoButtonId" layoutX="262.0" layoutY="294.0" mnemonicParsing="false" onAction="#twoAction" prefHeight="86.0" prefWidth="232.0" text="2" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font></Button>
+        <Button fx:id="threeButtonId" layoutX="501.0" layoutY="294.0" mnemonicParsing="false" onAction="#threeAction" prefHeight="86.0" prefWidth="232.0" text="3" textFill="WHITE" AnchorPane.rightAnchor="22.0">
+            <font>
+                <Font size="22.0" />
+            </font></Button>
+        <Button fx:id="fourButtonId" layoutX="24.0" layoutY="383.0" mnemonicParsing="false" onAction="#fourAction" prefHeight="86.0" prefWidth="232.0" text="4" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font></Button>
+        <Button fx:id="fiveButtonId" layoutX="262.0" layoutY="383.0" mnemonicParsing="false" onAction="#fiveAction" prefHeight="86.0" prefWidth="232.0" text="5" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font></Button>
+        <Button fx:id="sixButtonId" layoutX="501.0" layoutY="383.0" mnemonicParsing="false" onAction="#sixAction" prefHeight="86.0" prefWidth="232.0" text="6" textFill="WHITE">
+            <font>
+                <Font size="22.0" />
+            </font></Button>
+        <Button fx:id="nextButtonId" layoutX="501.0" layoutY="475.0" mnemonicParsing="false" onAction="#quizGeneratorWithEnd" prefHeight="91.0" prefWidth="232.0" text="Next -&gt;" textFill="#0ee367">
+            <font>
+                <Font size="42.0" />
+            </font></Button>
+        <Label fx:id="gainOrLostLabelId" layoutX="26.0" layoutY="229.0" prefHeight="52.0" prefWidth="468.0" text="Your Status" textFill="#bbe505">
+            <font>
+                <Font size="32.0" />
+            </font></Label>
+        <Label fx:id="counterId" layoutX="504.0" layoutY="229.0" prefHeight="52.0" prefWidth="232.0" text="Score: ">
+            <font>
+                <Font size="34.0" />
+            </font>
+        </Label>
+        <Button fx:id="replayId" alignment="CENTER" layoutX="262.0" layoutY="475.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="91.0" prefWidth="232.0" text="Replay" textFill="#c91515">
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Button>
+      <Button fx:id="goToSnakeId" layoutX="24.0" layoutY="475.0" mnemonicParsing="false" onAction="#goToSnake" prefHeight="91.0" prefWidth="232.0" text="Snake Game" textFill="#1abdb8">
+         <font>
+            <Font name="Consolas Italic" size="34.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
